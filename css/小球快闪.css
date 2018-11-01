@@ -1,0 +1,229 @@
+body{
+    overflow: hidden;
+}
+
+/*音乐*/
+audio{
+    display: none;
+}
+
+
+.box{
+    width: 500px;
+    height: 400px;
+    border: 1px solid red;
+    margin-top: 100px;
+    margin-left: 400px;
+    position: relative;
+}
+.even{
+    position: absolute;
+    top :136px;
+    left:80px;
+}
+li{
+
+
+}
+.caltimebox{
+    position: absolute;
+    top: 120px;
+    left: 1101px;
+}
+.ball1 {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top:109px;
+    left:0px;
+
+
+}
+.rectangle1{
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    background-color: blue;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+.circle1{
+    width: 80px;
+    height: 80px;
+    background-color: #666;
+    border-radius: 50%;
+    position: absolute;
+    top:30px;
+    left:0px;
+}
+.ball2 {
+    width: 20px;
+    height: 20px;
+    background-color: #666;
+    position: absolute;
+    top:50px;
+    left:480px;
+
+
+}
+.rectangle2{
+    width: 150px;
+    height: 30px;
+    background-color: #666;
+    position: absolute;
+    top:240px;
+    left:260px;
+}
+.circle2{
+    width: 50px;
+    height: 50px;
+    background-color: #836;
+    border-radius: 50%;
+    position: absolute;
+    top:270px;
+    left:260px;
+}
+.ball3{
+    width: 100px;
+    height: 80px;
+    background-color: #666;
+    position: absolute;
+    top:110px;
+    left:260px;
+}
+
+.target{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    position: absolute;
+    top:300px;
+    left: 200px;
+}
+.txt{
+     position: fixed;
+    top: 34%;
+    left: 77%;
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+}
+/*小鸟动画*/
+.bird{
+    position: absolute;
+    top: 0px;
+    left: -85px;
+    display: none;
+    animation: bird 20s linear;
+}
+@keyframes bird {
+    0%{
+
+    }
+    100%{
+        top: 0px;
+        left: 1360px;
+    }
+}
+/*鸟蛋动画*/
+.egg{
+    display: none;
+    /*opacity: 0;*/
+    position: absolute;
+    top: 45px;
+    left: 630px;
+    width: 40px;
+    height: 40px;
+    animation: egg 10s linear;
+}
+.egg img{
+    width: 100%;
+}
+@keyframes egg {
+    0%{
+
+    }
+    100%{
+        top: 700px;
+        /*left: 1360px;*/
+    }
+}
+
+/*海豚动画*/
+.whale{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:70%;
+    width: 300px;
+    animation: whale 5s linear;
+}
+.whale img{
+    width: 100%;
+
+}
+@keyframes whale {
+    0%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(-13deg);
+        top: 50%;
+        left: 40%;
+    }
+    100%{
+        transform: rotate(-60deg);
+        top: 100%;
+        left: 20%;
+
+    }
+}
+/*陨星天降动画*/
+.star{
+    display: none;
+    position: absolute;
+    top: -54%;
+    left: 90%;
+    width: 100px;
+    height: 100px;
+    animation: star 8s linear;
+}
+.star img{
+    width: 100%;
+}
+@keyframes star {
+    0%{
+
+    }
+    100%{
+
+        top: 100%;
+        left: 0%;
+
+    }
+}
+/*百发百中*/
+.arrow{
+    display: none;
+    position: absolute;
+    top: 34%;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    animation: arrow 8s linear;
+}
+.arrow img{
+    width: 100%;
+}
+@keyframes arrow {
+    0%{
+
+    }
+    100%{
+
+        left: 100%;
+
+    }
+}
